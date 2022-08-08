@@ -447,7 +447,6 @@ a {
 }
 
 .price-content__item::after {
-  display: block;
   content: "";
   position: absolute;
   top: 0;
@@ -536,12 +535,15 @@ a {
 }
 
 .reviews__footer::after {
-  content: url(/images/stars.svg);
+  content: "";
   position: absolute;
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  background-image: url("../images/stars.svg");
+  width: 108px;
+  height: 20px;
 }
 
 .reviews__img {
