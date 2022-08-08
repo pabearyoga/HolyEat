@@ -183,6 +183,7 @@ a {
 }
 
 .hero {
+  position: relative;
   padding: 100px 0;
 }
 
@@ -201,6 +202,17 @@ a {
           align-items: center;
 }
 
+.hero__container::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 17%;
+  left: 17%;
+  background-image: url("../images/hero-bg.svg");
+  width: 1142px;
+  height: 741px;
+}
+
 .hero__content {
   text-align: left;
 }
@@ -214,8 +226,10 @@ a {
 }
 
 .problems {
+  position: relative;
   background: #f9fafc;
   padding: 115px 0;
+  z-index: -2;
 }
 
 .problems__title {
