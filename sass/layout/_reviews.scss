@@ -1,0 +1,50 @@
+.reviews {
+    padding: 173px 0;
+}
+
+.reviews__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    margin-right: calc(-1 * 30px);
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.reviews__item {
+    position: relative;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    border: 1px solid #ecebeb;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 80px 58px 45px 45px;
+}
+
+.reviews__span {
+    display: block;
+    height: 30px;
+}
+
+.reviews__text {
+    border-bottom: 1px solid #ecebeb;
+    padding-bottom: 47px;
+}
+
+.reviews__footer {
+    position: relative;
+    margin-top: 22px;
+}
+
+.reviews__footer::after {
+    content: url(/images/stars.svg);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.reviews__img {
+    position: absolute;
+    top: -50px;
+}

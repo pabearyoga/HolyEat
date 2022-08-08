@@ -1,0 +1,35 @@
+.header {
+    border-bottom: 2px solid rgba(236, 235, 235, 1);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 34px 100px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+    margin-right: 43px;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 43px;
+}
+
+.menu__link:hover {
+    color: #fd576c;
+}
+
+.header__btn {
+    background: #e6f9e6;
+    color: #5dbd6d;
+}
