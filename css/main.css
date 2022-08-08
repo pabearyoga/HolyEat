@@ -363,6 +363,7 @@ a {
 
 .benefits__img {
   margin-right: 90px;
+  border-radius: 10px;
 }
 
 .price {

@@ -3,17 +3,6 @@
     background: #f9fafc;
 }
 
-// .benefits__container {
-//     display: flex;
-//     flex-direction: column;
-// }
-
-// .benefits__wrapper {
-// display: flex;
-// justify-content: space-around;
-// align-items: center;
-// }
-
 .benefits__content {
     display: flex;
     justify-content: space-around;
@@ -37,4 +26,5 @@
 
 .benefits__img {
     margin-right: 90px;
+    border-radius: 10px;
 }
