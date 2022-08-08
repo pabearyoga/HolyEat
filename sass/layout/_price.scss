@@ -75,28 +75,29 @@
 }
 
 .price-content__item::after {
-    content: url("/images/Vector7.svg");
+    content: "";
     position: absolute;
     top: 0;
     left: -30px;
+    background-image: url("/images/Vector7.svg");
 }
 
 .price-content:hover .price-content__item::after {
-    content: url(../images/Vector8.svg);
+    content: "";
     position: absolute;
     top: 0;
     left: -30px;
 }
 
 .cancel::after {
-    content: url(../images/v9.svg);
+    content: "";
     position: absolute;
     top: 0;
     left: -30px;
 }
 
 .price-content:hover .cancel::after {
-    content: url(../images/v10.svg);
+    content: "";
     position: absolute;
     top: 0;
     left: -30px;
