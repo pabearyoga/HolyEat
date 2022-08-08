@@ -75,6 +75,7 @@
 }
 
 .price-content__item::after {
+    display: block;
     content: "";
     position: absolute;
     top: 0;
