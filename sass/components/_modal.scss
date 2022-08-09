@@ -1,0 +1,50 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #ecebeb;
+    border-radius: 10px;
+    @include transition-base(translate, background-color, box-shadow);
+}
+
+.btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fd576c;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+        background: #e6f9e6;
+        color: #5dbd6d;
+    }
+}
+
+.form__btn {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+.form__btn:hover,
+.form__btn:focus {
+    background: #e6f9e6;
+    color: #5dbd6d;
+}

@@ -269,7 +269,7 @@
                     Безкоштовний тиждень для Вашого друга чи члена сім’ї
                   </li>
                 </ul>
-                <a class="btn" href="">Обрати </a>
+                <a class="btn" href="#learn-more">Обрати </a>
               </div>
             </li>
             <li class="price__item">
@@ -302,7 +302,7 @@
                     Безкоштовний тиждень для Вашого друга чи члена сім’ї
                   </li>
                 </ul>
-                <a class="btn" href="">Обрати </a>
+                <a class="btn" href="#learn-more">Обрати </a>
               </div>
             </li>
             <li class="price__item">
@@ -335,7 +335,7 @@
                     Безкоштовний тиждень для Вашого друга чи члена сім’ї
                   </li>
                 </ul>
-                <a class="btn" href="">Обрати </a>
+                <a class="btn" href="#learn-more">Обрати </a>
               </div>
             </li>
           </ul>
@@ -451,7 +451,10 @@
               Все ще є запитання? Ми будемо раді відповісти на них у будь-який
               зручний для Вас час
             </p>
-            <a class="btn" href="">Запитайте нас</a>
+            <!-- <a class="btn" href="" data-modal-open>Запитайте нас</a> -->
+            <button class="btn" type="button" data-modal-open>
+              Запитайте нас
+            </button>
           </div>
         </div>
       </section>
@@ -483,6 +486,43 @@
       </div>
     </footer>
 
-    <script src="./js/menu.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal container">
+        <button class="btn-close" type="button" data-modal-close>-</button>
+        <h2 class="upper__title">Залиште свої дані, ми вам зателефонуємо.</h2>
+        <!-- форма -->
+        <form class="form">
+          <label class="field form__field"
+            >Ім'я
+            <input type="text" class="field__input" name="username" />
+            <svg class="field__icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-person-modal"></use>
+            </svg>
+          </label>
+
+          <label class="field form__field"
+            >Телефон
+            <input type="tel" class="field__input" name="tel" />
+            <svg class="field__icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-phone-modal"></use>
+            </svg>
+          </label>
+
+          <label class="field form__field"
+            >Коментар
+            <textarea
+              class="field__textarea"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+        </form>
+        <!-- submit -->
+        <button class="btn form__btn" type="submit" data-modal-open="">
+          Надіслати
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

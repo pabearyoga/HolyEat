@@ -61,6 +61,7 @@
 .btn {
     display: inline-block;
     padding: 9px 25px;
+    border: none;
 
     background: #fd576c;
     color: #ffffff;
@@ -69,4 +70,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
+
+    cursor: pointer;
 }
