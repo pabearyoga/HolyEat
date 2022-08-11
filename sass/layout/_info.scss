@@ -30,7 +30,7 @@
 }
 
 .info__link::after {
-    content: url("/images/Vector.svg");
+    content: url("../images/Vector.svg");
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
